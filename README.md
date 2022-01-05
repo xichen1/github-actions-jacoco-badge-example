@@ -8,7 +8,7 @@ To create a fat jar:
 ./gradlew shadowJar
 ```
 
-To run your application:![Coverage](.github/badges/jacoco.svg)
+To run your application:
 
 ```
 java -jar build/libs/hello-friends-1.0-SNAPSHOT.jar server hello-world.yml
