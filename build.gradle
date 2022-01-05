@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'com.github.johnrengelman.shadow' version '4.0.2'
-    id 'jacoco'
+    // TODO add jacoco
 }
 
 group 'com.example.helloworld'
@@ -38,8 +38,6 @@ shadowJar {
     archiveName rootProject.name + '-' + rootProject.version + '.jar'
 }
 
-jacocoTestReport {
-    reports {
-        csv.enabled true
-    }
-}
+// TODO Specify Jacoco version
+
+// TODO Configure Jacoco
