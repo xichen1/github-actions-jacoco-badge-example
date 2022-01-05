@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'com.github.johnrengelman.shadow' version '4.0.2'
+    id 'jacoco'
 }
 
 group 'com.example.helloworld'
@@ -35,4 +36,10 @@ shadowJar {
         attributes 'Main-Class': mainClassName
     }
     archiveName rootProject.name + '-' + rootProject.version + '.jar'
+}
+
+jacocoTestReport {
+    reports {
+        csv.enabled true
+    }
 }
