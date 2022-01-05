@@ -1,0 +1,9 @@
+version: '3'
+services:
+    # just a random name.
+    oh-my-server:
+        build: ./
+        ports:
+            - "8085:8085"
+            - "8086:8081"  # host to container port mapping
+
